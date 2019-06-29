@@ -113,7 +113,7 @@ class App extends React.Component{
           </Header>
           <Content
             style={{
-              backgroundColor : '#649cfa',
+              backgroundColor : '#72A9CB',
               margin: '24px 16px',
               padding: 24,
               minHeight: 280,
