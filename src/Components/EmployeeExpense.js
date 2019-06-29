@@ -2,7 +2,7 @@ import React from 'react';
 import { List, Typography } from 'antd';
 import Element from './Element.js';
 
-var employeeIndex = 0;
+let employeeIndex = 0;
 
 class EmployeeExpense extends React.Component{
     render(){

@@ -1,5 +1,5 @@
 .Expand{
-    background-color : #72A9CB;
+    background-color : #8BDCE8;
     height : 15px;
     width : 30%;
     border-radius :20px;
@@ -12,22 +12,25 @@
 
 .Expand:hover{
     cursor: pointer;
-    background-color : #72A9CB;
+    background-color : #8BDCE8;
 }
 
 .Close{
-    background-color : #3D5A80;
+    background-color : #8BDCE8;
     height : 25px;
-    width : 50%;
+    width : fit-content ;
     border-radius :20px;
     border : none;
     align-self : center;
     justify-self : right;
-    margin-right : 10px;
+    margin-right: 20px;
+    box-shadow: none;
+    padding-left: 25%;
+    float:right;
 }
 
 .Close:hover{
     cursor: pointer;
-    background-color : #3D5A80;
+    background-color : #8BDCE8;
 
 }
