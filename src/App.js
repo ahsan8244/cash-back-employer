@@ -20,40 +20,42 @@ class App extends React.Component{
             'Currently on leave to Japan',
             [
                 {
+                    Title : 'Eating at sushi restaurant with client',
+                    Expense : 'HKD 4500',
+                    Date : '29 June 2019',
+                    Details : {
+                        '2 Salmon Mentai' : 'JPY 1380.3',
+                        '1 Tuna Roll' : 'JPY 670.5',
+                        '2 Special Japanese Sake' : 'JPY 15702',
+                        '2 Oriental Mango Dessert' : 'JPY 834.7'
+                    },
+                    id : '384023984'
+                },
+                {
                     Title : 'Flight to Japan',
                     Expense : 'HKD 4500',
                     Date : '29 June 2019',
-                    Details : 'Flight number : SQ 123',
+                    Details : {
+                        '2 Salmon Mentai' : 'JPY 1380.3',
+                        '1 Tuna Roll' : 'JPY 670.5',
+                        '2 Special Japanese Sake' : 'JPY 15702',
+                        '2 Oriental Mango Dessert' : 'JPY 834.7'
+                    },
                     id : '830184019'
                 },
                 {
                     Title : '5 days 4 night hotel in Osaka',
                     Expense : 'HKD 4500',
                     Date : '29 June 2019',
-                    Details : 'Grand Osaka Hotel',
-                    id : '480923840'
-                },
-                {
-                    Title : 'Eating at sushi restaurant with client',
-                    Expense : 'HKD 4500',
-                    Date : '29 June 2019',
-                    Details : 'Sushi Master Restaurant',
-                    id : '384023984'
-                },
-                {
-                    Title : 'Eating at sushi restaurant with client',
-                    Expense : 'HKD 4500',
-                    Date : '29 June 2019',
-                    Details : 'Flight number : SQ 123',
-                    id : '384023984'
-                },
-                {
-                    Title : 'Eating at sushi restaurant with client',
-                    Expense : 'HKD 4500',
-                    Date : '29 June 2019',
-                    Details : 'Flight number : SQ 123',
-                    id : '384023984'
+                    Details : {
+                        '2 Salmon Mentai' : 'JPY 1380.3',
+                        '1 Tuna Roll' : 'JPY 670.5',
+                        '2 Special Japanese Sake' : 'JPY 15702',
+                        '2 Oriental Mango Dessert' : 'JPY 834.7'
+                    },
+                    id : '2138503453'
                 }
+
             ]
         ],
         [
@@ -111,12 +113,13 @@ class App extends React.Component{
           </Header>
           <Content
             style={{
+              backgroundColor : '#649cfa',
               margin: '24px 16px',
               padding: 24,
-              background: '#fff',
               minHeight: 280,
               display : 'grid',
               gridTemplateColumns : '40% 60%',
+              borderRadius : '20px'
             }}
           >
             <EmployeeInfo employeeData={this.state.employeeData}/>

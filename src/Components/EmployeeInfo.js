@@ -33,28 +33,27 @@ class EmployeeInfo extends React.Component {
     render(){
         return (
             <Card
-            style={{textAlign : 'center', width: 350, backgroundColor : '#649cfa',borderRadius : '15px'}}
+            style={{textAlign : 'center', width: 350, backgroundColor : '#649cfa',borderRadius : '15px',border : 'none'}}
             cover={
               <img
                 alt="example"
                 src={this.props.employeeData[this.state.employeeIndex][0]}
-                style={{width: 200, height : 200, borderRadius: '50%',margin: '5% 75px',border:'2px solid #636570'}}
+                style={{width: 200, height : 200, borderRadius: '50%',margin: '5% 75px'}}
               />
             }
 
               >
                 <List
                   size="small"
-                  bordered
                   dataSource={this.props.employeeData[this.state.employeeIndex].slice(1,5)}
                   renderItem={item => <List.Item>{item}</List.Item>}
                   style={{border : '2px solid #00163b',fontSize : '18px',color : '#000'}}
                 />
                 <ButtonGroup style={{marginTop : '20px'}}>
-                  <Button type="primary" onClick={this.buttonPrevious}>
+                  <Button style ={{backgroundColor:'#041126'}} type="primary" onClick={this.buttonPrevious}>
                     <Icon type="left" />
                   </Button>
-                  <Button type="primary" onClick={this.buttonNext}>
+                  <Button style ={{backgroundColor:'#041126'}} type="primary" onClick={this.buttonNext}>
                     <Icon type="right" />
                   </Button>
                 </ButtonGroup>
