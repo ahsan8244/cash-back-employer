@@ -1,0 +1,29 @@
+.Expand{
+    background-color : green;
+    height : 25px;
+    width : 50%;
+    border-radius :20px;
+    border : none;
+    align-self : center;
+    justify-self : right;
+    margin-right : 10px;
+}
+
+.Expand:hover{
+    cursor: pointer;
+}
+
+.Close{
+    background-color : red;
+    height : 25px;
+    width : 50%;
+    border-radius :20px;
+    border : none;
+    align-self : center;
+    justify-self : right;
+    margin-right : 10px;
+}
+
+.Close:hover{
+    cursor: pointer;
+}
