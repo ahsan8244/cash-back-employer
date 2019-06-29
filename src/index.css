@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+p{
+    font-family: 'Poiret One', monospace;
+}
+
+.List{
+    font-family: 'Poiret One', monospace;
+}
+
+.Expense{
+    font-family: 'Poiret One', monospace;
+    font-size: 24px;
+    font-weight: bold;
+}

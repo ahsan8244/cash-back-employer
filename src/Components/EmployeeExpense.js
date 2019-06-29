@@ -9,7 +9,7 @@ class EmployeeExpense extends React.Component{
         const {employeeData} = this.props;
         return(
             <div style={{borderLeft : '0.1px solid white',paddingLeft : '40px'}}>
-               <h3 style={{ margin: '16px 0' }}>{employeeData[employeeIndex][1]}'s Expense</h3>
+               <h3 className="Expense" style={{ margin: '16px 0',fontWeight : 'bold' }}>Expense</h3>
                <div className = "expenseList" style = {{height:'auto',borderRadius:'15px',display:'grid',backgroundColor : '#72A9CB'}}>
                     {employeeData[0][employeeData[0].length-1].map((element)=>(
                         <Element key={element.id} item={element}/>
