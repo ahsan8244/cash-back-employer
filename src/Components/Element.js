@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import { Button,Icon } from 'antd';
 import './Element.css';
 
 class Element extends Component{
@@ -35,7 +36,9 @@ class Element extends Component{
             return(
                 <div className="Element" style={{display : 'grid',gridTemplateColumns : '80% 20%'}}>
                     <p style={{ margin : '10px',fontWeight:'bold',fontSize : '16px'}}>{this.props.item.Title}</p>
-                    <input type="submit" value="Expand" onClick={this.Expanded} className="Expand"/>
+                    <Button className = "Expand" type="primary" onClick={this.Expanded}>
+                      <Icon type="down" />
+                    </Button>
                 </div>
             );
         }
@@ -43,7 +46,7 @@ class Element extends Component{
             return(
                 <div className="Container" style={{display:'grid',gridTemplateRows:'10% 90%'}}>
                     <p style={{ margin : '10px',fontWeight:'bold',fontSize : '16px'}}>{this.props.item.Title}</p>
-                    <div style={{margin : '0 5% 0 10%' , display : 'grid', gridTemplateRows:'repeat(2,(100/9)%) auto (100/9)%',width : '85%', borderRadius : '15px', border : '1px solid #000',backgroundColor :'#656c78'}}>
+                    <div style={{paddingLeft : '5%',  display : 'grid',borderRadius : '10px', gridTemplateRows:'repeat(2,(100/9)%) auto (100/9)%',width : '100%',  backgroundColor :'#3D5A80'}}>
                         <p style={pStyle}>Total Expense : {this.props.item.Expense}</p>
                         <p style={pStyle}>Date : {this.props.item.Date}</p>
                         <div style={{gridRow : '3/4', display : 'grid', gridTemplateRows : 'repeat(6,15%) 10%'}}>
@@ -57,7 +60,9 @@ class Element extends Component{
                         </div>
                         <div className="Element" style={{display : 'grid',gridTemplateColumns : '80% 20%',gridRow : '4/5'}}>
                             <p style={pStyle}>ID : {this.props.item.id}</p>
-                            <input type="submit" value="Close" onClick={this.Closed} className="Close"/>
+                            <Button className = "Close" type="primary" onClick={this.Closed}>
+                              <Icon type="up" />
+                            </Button>
                         </div>
                     </div>
                 </div>
@@ -67,14 +72,16 @@ class Element extends Component{
 }
 
 const pStyle = {
-    margin : '10px'
+    margin : '10px',
+    color : '#E0FBFC'
 }
 
 const pStyle2 = {
     margin : '10px',
     marginLeft : '60px',
     display : 'grid',
-    gridTemplateColumns : '75% 25%'
+    gridTemplateColumns : '75% 25%',
+    color : '#E0FBFC'
 }
 
 const pStyle2Special = {
@@ -83,6 +90,7 @@ const pStyle2Special = {
     display : 'grid',
     gridTemplateColumns : '75% 25%',
     marginTop : 0,
+    color : '#E0FBFC'
 }
 
 const styleLeft = {
