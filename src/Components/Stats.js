@@ -1,6 +1,7 @@
 import React,{Component} from "react";
 import './Stats.css'
 import { Statistic, Card, Row, Col, Icon } from 'antd';
+import Text from "antd/lib/typography/Text";
 
 class Stats extends Component{
     constructor(){
@@ -8,8 +9,8 @@ class Stats extends Component{
     }
     render(){
         return(
-            <div style={{width:"fit-content"}}>
-                <h3 className="Expense" style={{ margin: '16px 0',fontWeight : 'bold' }}>User Statistics</h3>
+            <div style={{width:500, marginTop:20}}>
+                <Text style={{marginTop:20, fontSize:14}}> User Statistics</Text>
                     <div className="container" style={container}>
                         <div className="a" style={{display : 'grid', gridTemplateRows : '50% 10% 40%',textAlign : 'center'}}>
                             <h1 style={{color : '#fff', fontSize : '48px', marginBottom : '0px'}}>14</h1>
